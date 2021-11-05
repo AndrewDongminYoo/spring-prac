@@ -166,8 +166,8 @@ textarea.field::placeholder {
     position: absolute;
     bottom: 14px;
     right: 55px;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 .footer img.icon-end-edit {
@@ -177,16 +177,16 @@ textarea.field::placeholder {
     bottom: 14px;
     right: 55px;
     width: 20px;
-    height: 15px;
+    height: 20px;
 }
 
 .footer img.icon-delete {
     cursor: pointer;
     position: absolute;
-    bottom: 12px;
+    bottom: 14px;
     right: 19px;
-    width: 14px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 #cards-box {
