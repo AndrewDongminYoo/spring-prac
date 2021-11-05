@@ -2,8 +2,11 @@ package com.sparta.feed24.domain;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Entity // 테이블과 연계됨을 스프링에게 알려줍니다.
