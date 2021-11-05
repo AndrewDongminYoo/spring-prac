@@ -13,11 +13,10 @@ public class MemoService {
 
     private MemoRepository memoRepository;
 
-    public Long update(Long id, MemoRequestDto requestDto) {
+    public void update(Long id, MemoRequestDto requestDto) {
         Memo memo = memoRepository.findById(id).orElseThrow(
                 NullPointerException::new
         );
         memo.update(requestDto);
-        return memo.getId();
     }
 }
