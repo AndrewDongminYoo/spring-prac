@@ -6,7 +6,6 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Getter
 @Entity // 테이블과 연계됨을 스프링에게 알려줍니다.
@@ -21,11 +20,6 @@ public class Memo extends Timestamped { // 생성,수정 시간을 자동으로 
 
     @Column(nullable = false)
     private String contents;
-
-    public Memo(String username, String contents) {
-        this.username = username;
-        this.contents = contents;
-    }
 
     public Memo(MemoRequestDto requestDto) {
         this.username = requestDto.getUsername();

@@ -5,8 +5,10 @@ import com.sparta.feed24.domain.MemoRepository;
 import com.sparta.feed24.domain.MemoRequestDto;
 import com.sparta.feed24.service.MemoService;
 import lombok.RequiredArgsConstructor;
+import org.apache.tomcat.jni.Local;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -23,7 +25,9 @@ public class MemoController {
 
     @GetMapping("/api/memos")
     public List<Memo> readMemo() {
-        return memoRepository.findAllByOrderByModifiedAtDesc();
+        LocalDateTime modifiedAt = LocalDateTime.now().minusDays(1);
+        LocalDateTime modifiedAt2 = LocalDateTime.now();
+        return memoRepository.findAllByModifiedAtBetweenOrderByModifiedAtDesc(modifiedAt, modifiedAt2);
     }
 
     @DeleteMapping("/api/memos/{id}")
