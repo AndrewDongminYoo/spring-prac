@@ -5,7 +5,6 @@ import com.sparta.feed24.domain.MemoRepository;
 import com.sparta.feed24.domain.MemoRequestDto;
 import com.sparta.feed24.service.MemoService;
 import lombok.RequiredArgsConstructor;
-import org.apache.tomcat.jni.Local;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;

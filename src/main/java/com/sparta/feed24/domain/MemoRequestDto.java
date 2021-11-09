@@ -2,7 +2,6 @@ package com.sparta.feed24.domain;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

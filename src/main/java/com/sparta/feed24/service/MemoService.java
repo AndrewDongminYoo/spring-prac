@@ -1,6 +1,5 @@
 package com.sparta.feed24.service;
 
-
 import com.sparta.feed24.domain.Memo;
 import com.sparta.feed24.domain.MemoRepository;
 import com.sparta.feed24.domain.MemoRequestDto;
